@@ -26,14 +26,15 @@
             <a href="#view-pets" class="our-btn utility-mr"> View Pets </a>
             <a href="#" class="our-btn our-btn--outline"> Manage Pets </a>
           </div>
-          <!-- todo 4 Callout Area Here -->
+          <!--* 4 Callout Area Here -->
           <div class="intro-features">
             <div class="intro-feature">
               <img src="./assets/images/sun1.svg" alt="" />
               <h2>Sunny Play</h2>
               <p>
                 Our center is located in beautiful Miami, and it&rsquo;s
-                currently <span id="temperature-output" ></span> °F at our pet playground.
+                currently <span id="temperature-output"></span> °F at our pet
+                playground.
               </p>
             </div>
             <div class="intro-feature">
@@ -67,87 +68,31 @@
         <div class="circle-two"></div>
       </div>
     </div>
-    <!--  todo Actual Pet Area -->
+    <!--* Actual Pet Area -->
     <div id="view-pets" class="page-section">
       <div class="page-section-inner">
         <h2 class="page-section-title">Meet Our Friends</h2>
         <div class="pet-filter">
           <p>
-            Show me: <button>All Pets</button> <button>Only Dogs</button>
-            <button>Only Cats</button>
+            Show me: <button data-filter="all" class="active">All Pets</button>
+            <button data-filter="dog" >Only Dogs</button>
+            <button data-filter="cat" >Only Cats</button>
           </p>
         </div>
-        <div class="list-of-pets">
-          <div class="pet-card">
-            <div class="pet-card-text">
-              <h3>Barksalot</h3>
-              <p class="pet-description">
-                Barksalot is a sweet and lovable 3 year old ball of fluff. He
-                loves carrots, celery, and playing fetch.
-              </p>
-              <p class="pet-age">2 years old</p>
-            </div>
-            <div class="pet-card-photo">
-              <img
-                src="./assets/images/barksalot.jpg"
-                alt="white fluffy dog named barksalot photo"
-              />
-            </div>
-          </div>
-          <!-- end of pet card -->
-          <div class="pet-card">
-            <div class="pet-card-text">
-              <h3>Meowsalot</h3>
-              <p class="pet-description">
-                Meowsalot is the most talkative cat we&rsquo;ve ever come
-                across. Constant meowing, chirping and purring!
-              </p>
-              <p class="pet-age">1 year old</p>
-            </div>
-            <div class="pet-card-photo">
-              <img
-                src="./assets/images/meowsalot.jpg"
-                alt="black and white cat named barksalot photo"
-              />
-            </div>
-          </div>
-          <!-- end of pet card -->
-          <div class="pet-card">
-            <div class="pet-card-text">
-              <h3>Woof</h3>
-              <p class="pet-description">
-                Woof is a very talkative and sweet pup. She loves beets, plums,
-                cuddles and jumping over low fences.
-              </p>
-              <p class="pet-age">Less than a year old</p>
-            </div>
-            <div class="pet-card-photo">
-              <img
-                src="./assets/images/woof.jpg"
-                alt="brown dog named woof photo"
-              />
-            </div>
-          </div>
-          <!-- end of pet card -->
-          <div class="pet-card">
-            <div class="pet-card-text">
-              <h3>Purrsloud</h3>
-              <p class="pet-description">
-                Purrsloud has the loudest and most relaxing purr that&rsquo;s
-                come through our center. Come hear it yourself.
-              </p>
+        <div class="list-of-pets"></div>
 
-              <p class="pet-age">4 years old</p>
+        <template id="pet-card-template">
+          <div class="pet-card">
+            <div class="pet-card-text">
+              <h3></h3>
+              <p class="pet-description"></p>
+              <p class="pet-age"></p>
             </div>
             <div class="pet-card-photo">
-              <img
-                src="./assets/images/purssloud.jpg"
-                alt="brown tiger cat named barksalot photo"
-              />
+              <img src="" alt="" />
             </div>
           </div>
-          <!-- end of pet card -->
-        </div>
+        </template>
       </div>
     </div>
     <footer class="site-footer">
